@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+html {
+      background-color: white;
+}
+body {
+     min-height: 100vh;
+     border-radius: 2%;
+     background: linear-gradient(#fff, #999);          
+     margin: 0 3em;
+     border: 1px solid grey;
+
+}
+.header {
+     height: 15vh; 
+     display: flex; flex-direction: column;
+     margin-bottom: 1%;
+     flex: 1;
+     
+}
+.barra {
+     font-size: 1.2em;
+     color: white;
+     background-color: black;
+     text-align: center;
+       font-style: italic; 
+     overflow: hidden;
+       
+     
+}
+.nav {
+     box-shadow: 1px 1px hsla(0, 0%, 0%, 0.137);
+     border: 5px solid rgba(224 224 216 0.5);
+     display: flex; flex-direction: row;
+     justify-content: flex-end;
+     flex: 1;
+}
+.div-logo {
+        position:relative;
+        right: 33em;
+}
+.logo {
+     height: 11vh;
+     
+     
+     
+}
+.items {
+    display: flex; flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1.5%;
+    
+       
+    
+}
+.items-list {
+     list-style: none;
+     gap: 1em;
+     margin-right: 5%; 
+     
+}
+    .items-links {
+       text-decoration: none;
+       font-size: 1.3em;
+       color: black;
+       gap: 12em;
+       
+}
+.items-links:hover {
+      color: rgb(146, 184, 89); 
+     transition: 0.5s;
+            
+}
+.presentacion {
+     width: 100%; height: 100vh;
+     display: flex;     
+     flex-direction: row;
+     justify-content: center;
+     
+   
+}
+.descripcion {
+     width: 50%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      padding: 5% 5% 0 5%;
+}
+.descripcion h1 {
+     margin-bottom: 1em;
+}
+.presentacion p {
+     letter-spacing: 3px;
+     
+}
+.reel {
+      width: 50%; height: 100%;
+      border-radius: 2%;
+      padding-left: none;
+      animation: reel ease-in-out 30s infinite;
+}
+@keyframes reel {
+     0% {
+           background-image: url(./equipo.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           aspect-ratio: 2:1;
+     }
+     25% {
+          background-image: url(./equipoo.webp);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          aspect-ratio: 16 / 9;
+     }
+     50% {
+          background-image: url(./equipooo.webp);
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           aspect-ratio: 16 / 9;
+     }
+     75% {
+          background-image: url(./equipooooo.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           aspect-ratio: 2:1;
+     }
+     100% {
+          background-image: url(./equipooooo.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          aspect-ratio: 2:1;
+     }
+}
+.titulo {
+      font-size: 2em;
+
+      font-family: 'Times New Roman', Times, serif;
+      
+      
+}
+.encabezado {
+     font-size: 1em;
+     font-family: 'Times New Roman', Times, serif;
+
+}
+#sistem {
+
+      height: 100vh;
+      display: flex; flex-direction: row;
+      background: linear-gradient(#fff, #999);
+      overflow: hidden;
+      padding: 1% 0;
+      flex-wrap: wrap;
+      
+      
+
+}
+.tarjeta {
+      width: 25%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
+      padding: 2%;
+      flex-wrap: wrap;
+      
+      border: 1px solid rgb(224 224 224);
+     
+      
+}
+.tarjeta:hover {
+      scale: 1.02;
+      transition: 1s;
+}
+.tarjeta h2 {
+      text-align: center;
+      padding: 1%;
+}
+.tarjeta p {
+      padding-bottom: 5em;
+      text-align:center;
+}
+.tarjeta img {
+     width: 80%; 
+     padding-bottom: none;
+     background-size: ;
+}
+
+
+#imagenes {
+     width: 100%; height: 100vh;
+     gap: 1em;
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     background: linear-gradient(#fff);          
+     padding: 0 2%;
+     
+     
+
+}
+.card {
+     display: flex; flex-direction: column;
+     border-radius: 5%; box-shadow: 2px 2px 2px black;
+     overflow: hidden;
+     width: 100%; height: 100%;
+}
+.card img {
+    width: 100%; max-height: 500px;
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    
+}
+.card img:hover {
+     transition: 3s;
+     scale: 1.05;
+     
+}
+.card-footer {
+     display: flex; flex-direction: column;
+     align-items: flex-start;
+}
+.card p {
+     text-align: center;
+     font-size: 1.2em;
+     font-weight: 50;
+     margin-top: 1.5%;
+}
+.card button {
+     font-size: 1.2rem;
+     background-color: rgb(163, 204, 230);
+     color: white;
+     border-radius: 5%;
+      
+
+}
+.card button:hover {
+    font-size: 1.25rem;
+    transition: 0.5s;
+    cursor: grab;
+}
+#presupuesto {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: center;
+}
+#presupuesto h3 {
+     background: linear-gradient(#fff);
+      font-size: 2em;
+      padding: 1em;
+}
+.formulario  {
+      background-color: rgb(212, 206, 206);
+      border: 3px solid whitesmoke;
+      border-radius: 3%;
+      padding-left: 2%;
+      overflow: hidden;
+      
+      
+}
+.formulario label {
+      
+      overflow: hidden;
+}
+.formulario input {
+    margin-bottom: 3%;
+    overflow: hidden;
+
+}
+
+span {
+      font-weight: 800;
+      margin-bottom: 2em;
+}
+.enviar {
+   font-size: 1.5em;
+   font-weight: 700;
+   width: 35%;   
+}
